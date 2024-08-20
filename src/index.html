@@ -3,13 +3,177 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
     <title>Astroship Pro - SAAS Startup Website Template for Astro</title>
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="bg-white fixed w-full z-20 top-0 start-0">
+          <div
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
+            <a
+              href="/"
+              class="text-lg flex items-center rounded-full rtl:space-x-reverse">
+              <span class="font-bold text-indigo-600">Astro</span>
+              <span class="text-slate-600">ship</span>
+              <span
+                class="text-[10px] font-bold bg-gray-200 text-slate-700 px-2 py-1 rounded-md leading-none ml-1 mt-0.5">
+                PRO
+              </span>
+            </a>
+            <div
+              class="hidden lg:flex items-center gap-4 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+              <a href="#" class="text-sm px-2 py-1 rounded-full">Log in</a>
+              <a
+                href="#"
+                class="btnTry text-center px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-800 inline-flex items-center gap-px rounded-full">
+                <span>Try for Free</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="w-4 h-4 mt-px">
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </div>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-800 rounded-lg md:hidden"
+              aria-controls="navbar-sticky"
+              aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14">
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15" />
+              </svg>
+            </button>
+            <div
+              class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+              id="navbar-sticky">
+              <ul
+                class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                <li>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                    class="flex items-center gap-1 text-sm rounded-full w-full py-2 px-1 text-gray-600 hover:text-indigo-600">
+                    Pages
+                    <svg
+                      class="w-3 h-3 mt-0.5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24">
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="3"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div
+                    id="dropdownNavbar"
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-full lg:w-48">
+                    <ul
+                      class="py-1 text-sm text-gray-600"
+                      aria-labelledby="dropdownLargeButton">
+                      <li>
+                        <a
+                          href="/features"
+                          class="block px-3 py-2 hover:text-indigo-600">
+                          Features
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/integrations"
+                          class="block px-3 py-2 hover:text-indigo-600 rounded">
+                          Intergrations
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/blog//typography-example"
+                          class="block px-3 py-2 hover:text-indigo-600 rounded">
+                          Blog Details
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/404"
+                          class="block px-3 py-2 hover:text-indigo-600 rounded">
+                          404 Page
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    href="/pricing"
+                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1"
+                    aria-current="page">
+                    Pricing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/about"
+                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/blog"
+                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/contact"
+                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1">
+                    Contact
+                  </a>
+                </li>
+                <div
+                  class="lg:hidden flex items-center mt-3 gap-4 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                  <a href="#" class="text-center text-sm w-full px-5 py-2 bg-gray-100 hover:bg-gray-200 border-2 border-transparent rounded-full">Log in</a>
+                  <a
+                    href="#"
+                    class="text-center text-sm w-full px-5 py-2 bg-indigo-600 text-white hover:bg-indigo-800 rounded-full">
+                    <span>Try for Free</span>
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
     <!-- Flowbite JS -->
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
