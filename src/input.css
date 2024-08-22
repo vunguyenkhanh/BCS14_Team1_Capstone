@@ -7,7 +7,3 @@
 * {
   font-family: 'Inter Variable', 'Inter', sans-serif;
 }
-
-.btnTry:hover svg {
-  @apply translate-x-1 transition-transform;
-}
