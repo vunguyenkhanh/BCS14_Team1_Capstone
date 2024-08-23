@@ -7,7 +7,10 @@ module.exports = {
       fontFamily: {
         inter: ['Inter Variable', 'Inter', 'sans-serif'],
       },
-      
+      backgroundImage: {
+        'gradient-radial':
+          'radial-gradient(rgb(199, 210, 254), rgba(199, 210, 254, 0))',
+      },
     },
   },
   plugins: [require('flowbite/plugin')],
