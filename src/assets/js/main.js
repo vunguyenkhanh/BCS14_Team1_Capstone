@@ -1,23 +1,44 @@
-window.addEventListener('scroll', function () {
-  const header = document.querySelector('header');
-  if (window.scrollY > 10) {
-    header.classList.add(
-      'bg-white/80',
-      'border-gray-200',
-      'backdrop-blur-lg',
-      'py-2',
-    );
-    header.classList.remove('border-transparent', 'py-5');
-  } else {
-    header.classList.remove(
-      'bg-white/80',
-      'border-gray-200',
-      'backdrop-blur-lg',
-      'py-2',
-    );
-    header.classList.add('border-transparent', 'py-5');
+// Scroll Navbar
+(function () {
+  const scrollY = 50;
+  const defaultClass = 'py-5 border-transparent';
+  const scrollClass = 'py-2 bg-white/80 border-gray-200 backdrop-blur-lg';
+
+  let scrollPos = 0;
+  let ticking = false;
+
+  function OnScroll(scrollPos) {
+    const headers = document.querySelectorAll('header');
+    const classArray = scrollClass.split(' ');
+    const replaceArray = defaultClass.split(' ');
+
+    headers.forEach((header) => {
+      if (scrollPos > scrollY) {
+        header.classList.remove(...replaceArray);
+        header.classList.add('is-scroll', ...classArray);
+        header.setAttribute('scroll', '');
+      }
+      //reduce the scrollY to avoid flickering when scrolling up
+      if (scrollPos < Math.max(scrollY - 40, 10)) {
+        header.classList.remove('is-scroll', ...classArray);
+        header.classList.add(...replaceArray);
+        header.removeAttribute('scroll');
+      }
+    });
   }
-});
+
+  document.addEventListener('scroll', (event) => {
+    scrollPos = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        OnScroll(scrollPos);
+        ticking = false;
+      });
+
+      ticking = true;
+    }
+  });
+})();
 
 // dropdownArrow
 document
