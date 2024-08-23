@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         inter: ['Inter Variable', 'Inter', 'sans-serif'],
       },
+      
     },
   },
   plugins: [require('flowbite/plugin')],
