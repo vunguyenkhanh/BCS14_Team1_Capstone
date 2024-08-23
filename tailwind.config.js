@@ -5,7 +5,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
+        inter: ['Inter Variable', 'Inter', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-radial':
+          'radial-gradient(rgb(199, 210, 254), rgba(199, 210, 254, 0))',
       },
     },
   },

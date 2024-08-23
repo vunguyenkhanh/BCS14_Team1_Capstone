@@ -11,12 +11,12 @@ This is the Tailwind CSS Capstone project.
 - **Deadline**: 04/09/2024
 
 ### Task List:
-| STT | Page | Assignee | Status |
-|:---:|:----:|:--------:|:------:|
-|  1  |      |          |        |
-|  2  |      |          |        |
-|  3  |      |          |        |
-|  4  |      |          |        |
+| **STT** | **Page** |    **Assignee**   | **Status** |
+|:-------:|:--------:|:-----------------:|:----------:|
+|    1    |   Home   |  Vũ Nguyễn Khánh  |     🔄     |
+|    2    |   About  |   Lâm Duy Phong   |     🔄     |
+|    3    |   Blog   | Nguyễn Lê Diệu My |     🔄     |
+|    4    |  Contact | Nguyễn Lê Diệu My |     🔄     |
 
 ### Demo URL:
 - **Layout URL**: [Link](https://astroship-pro.web3templates.com/)
