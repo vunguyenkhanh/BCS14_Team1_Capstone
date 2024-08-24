@@ -24,6 +24,15 @@ module.exports = {
       borderColor: {
         'purple-200': 'rgb(233 213 255)',
       },
+      animation: {
+        marquee: 'marquee 50s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translate(0)' },
+          '100%': { transform: 'translate(calc(-100% - 2.5rem))' },
+        },
+      },
     },
   },
   plugins: [require('flowbite/plugin')],
