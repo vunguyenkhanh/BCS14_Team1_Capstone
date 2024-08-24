@@ -25,45 +25,37 @@
   <body>
     <!-- Header -->
     <header
-      class="sticky z-20 top-0 start-0 border-b border-transparent transition-all py-5"
-    >
+      class="sticky z-20 top-0 start-0 border-b border-transparent transition-all py-5">
       <div class="max-w-screen-xl mx-auto px-5">
         <nav class="w-full">
           <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
-          >
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
             <a
               href="./"
-              class="text-lg flex items-center rounded-full rtl:space-x-reverse"
-            >
+              class="text-lg flex items-center rounded-full rtl:space-x-reverse">
               <span class="font-bold text-indigo-600">Astro</span>
               <span class="text-slate-600">ship</span>
               <span
-                class="text-[10px] font-bold bg-gray-200 text-slate-700 px-2 py-1 rounded-md leading-none ml-1 mt-0.5"
-              >
+                class="text-[10px] font-bold bg-gray-200 text-slate-700 px-2 py-1 rounded-md leading-none ml-1 mt-0.5">
                 PRO
               </span>
             </a>
             <div
-              class="hidden lg:flex items-center gap-4 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
-            >
+              class="hidden lg:flex items-center gap-4 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
               <a href="#" class="text-sm px-2 py-1 rounded-full">Log in</a>
               <a
                 href="#"
-                class="group transition text-center px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-800 inline-flex items-center gap-px rounded-full"
-              >
+                class="group transition text-center px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-800 inline-flex items-center gap-px rounded-full">
                 <span>Try for Free</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform"
-                >
+                  class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
                   <path
                     fill-rule="evenodd"
                     d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                    clip-rule="evenodd"
-                  ></path>
+                    clip-rule="evenodd"></path>
                 </svg>
               </a>
             </div>
@@ -73,39 +65,33 @@
               type="button"
               class="block lg:hidden"
               aria-controls="navbar-sticky"
-              aria-expanded="false"
-            >
+              aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg
                 class="w-4 h-4 text-gray-800"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                viewBox="0 0 24 24"
-              >
+                viewBox="0 0 24 24">
                 <path
                   id="navBarPath"
                   stroke="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
+                  d="M1 1h15M1 7h15M1 13h15" />
               </svg>
             </button>
             <div
               class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
-              id="navbar-sticky"
-            >
+              id="navbar-sticky">
               <ul
-                class="flex flex-col lg:p-0 font-medium lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent"
-              >
+                class="flex flex-col lg:p-0 font-medium lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent">
                 <li>
                   <button
                     id="dropdownNavbarLink"
                     data-dropdown-toggle="dropdownNavbar"
-                    class="flex items-center gap-1 text-sm rounded-full w-full py-2 px-1 text-gray-600 hover:text-indigo-600"
-                  >
+                    class="flex items-center gap-1 text-sm rounded-full w-full py-2 px-1 text-gray-600 hover:text-indigo-600">
                     Pages
                     <svg
                       id="dropdownArrow"
@@ -113,55 +99,47 @@
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
-                      viewBox="0 0 24 24"
-                    >
+                      viewBox="0 0 24 24">
                       <path
                         stroke="currentColor"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="3"
-                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                      />
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                     </svg>
                   </button>
                   <!-- Dropdown menu -->
                   <div
                     id="dropdownNavbar"
-                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-full lg:w-48"
-                  >
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-full lg:w-48">
                     <ul
                       class="py-1 text-sm text-gray-600"
-                      aria-labelledby="dropdownLargeButton"
-                    >
+                      aria-labelledby="dropdownLargeButton">
                       <li>
                         <a
                           href="./features"
-                          class="block px-3 py-2 hover:text-indigo-600"
-                        >
+                          class="block px-3 py-2 hover:text-indigo-600">
                           Features
                         </a>
                       </li>
                       <li>
                         <a
                           href="./integrations"
-                          class="block px-3 py-2 hover:text-indigo-600 rounded"
-                        >
+                          class="block px-3 py-2 hover:text-indigo-600 rounded">
                           Intergrations
                         </a>
                       </li>
                       <li>
                         <a
                           href="./blog/typography-example"
-                          class="block px-3 py-2 hover:text-indigo-600 rounded"
-                        >
+                          class="block px-3 py-2 hover:text-indigo-600 rounded">
                           Blog Details
                         </a>
                       </li>
                       <li>
                         <a
                           href="./404"
-                          class="block px-3 py-2 hover:text-indigo-600 rounded"
-                        >
+                          class="block px-3 py-2 hover:text-indigo-600 rounded">
                           404 Page
                         </a>
                       </li>
@@ -172,48 +150,41 @@
                   <a
                     href="./pricing"
                     class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1"
-                    aria-current="page"
-                  >
+                    aria-current="page">
                     Pricing
                   </a>
                 </li>
                 <li>
                   <a
                     href="./about"
-                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1"
-                  >
+                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1">
                     About
                   </a>
                 </li>
                 <li>
                   <a
                     href="./blog"
-                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1"
-                  >
+                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1">
                     Blog
                   </a>
                 </li>
                 <li>
                   <a
                     href="./contact"
-                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1"
-                  >
+                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1">
                     Contact
                   </a>
                 </li>
                 <div
-                  class="lg:hidden flex items-center mt-3 gap-4 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
-                >
+                  class="lg:hidden flex items-center mt-3 gap-4 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                   <a
                     href="#"
-                    class="text-center text-sm w-full px-5 py-2 bg-gray-100 hover:bg-gray-200 border-2 border-transparent rounded-full"
-                  >
+                    class="text-center text-sm w-full px-5 py-2 bg-gray-100 hover:bg-gray-200 border-2 border-transparent rounded-full">
                     Log in
                   </a>
                   <a
                     href="#"
-                    class="text-center text-sm w-full px-5 py-2 bg-indigo-600 text-white hover:bg-indigo-800 rounded-full"
-                  >
+                    class="text-center text-sm w-full px-5 py-2 bg-indigo-600 text-white hover:bg-indigo-800 rounded-full">
                     <span>Try for Free</span>
                   </a>
                 </div>
