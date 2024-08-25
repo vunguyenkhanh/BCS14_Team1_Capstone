@@ -13,7 +13,9 @@ module.exports = {
       },
       colors: {
         'indigo-600': 'rgb(79, 70, 229)',
+        'indigo-700': '#4338ca',
         'indigo-800': 'rgb(55 48 163)',
+        'indigo-900': '#312e81',
       },
       textColor: {
         'purple-600': 'rgb(147, 51, 234)',
