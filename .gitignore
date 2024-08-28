@@ -1,6 +1,6 @@
 # Dependency directories
 node_modules/
-src/output.css
+# src/output.css
 .vscode
 
 
