@@ -65,12 +65,12 @@ document
     });
 
 // next-pre button clicks
-document.getElementById('preButton').addEventListener('click', function(event) {
-    event.preventDefault();
-    window.location.href = 'blog1.html';
-});
+// document.getElementById('preButton').addEventListener('click', function(event) {
+//     event.preventDefault();
+//     window.location.href = '';
+// });
 
-document.getElementById('nextButton').addEventListener('click', function(event) {
-    event.preventDefault();
-    window.location.href = 'blog2.html';
-});
+// document.getElementById('nextButton').addEventListener('click', function(event) {
+//     event.preventDefault();
+//     window.location.href = 'blog2.html';
+// });
