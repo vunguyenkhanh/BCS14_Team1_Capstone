@@ -63,14 +63,3 @@ document
             navBarPath.setAttribute('d', originalPath);
         }
     });
-
-// next-pre button clicks
-// document.getElementById('preButton').addEventListener('click', function(event) {
-//     event.preventDefault();
-//     window.location.href = '';
-// });
-
-// document.getElementById('nextButton').addEventListener('click', function(event) {
-//     event.preventDefault();
-//     window.location.href = 'blog2.html';
-// });
