@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
@@ -8,51 +9,34 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./output.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Header -->
-    <header
-      class="sticky z-20 top-0 start-0 border-b border-transparent transition-all py-5">
-      <div class="max-w-screen-xl mx-auto px-5">
-        <nav class="w-full">
-          <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
-            <a
-              href="./"
-              class="text-lg flex items-center rounded-full rtl:space-x-reverse">
-              <span class="font-bold text-indigo-600">Astro</span>
-              <span class="text-slate-600">ship</span>
-              <span
-                class="text-[10px] font-bold bg-gray-200 text-slate-700 px-2 py-1 rounded-md leading-none ml-1 mt-0.5">
+    <header class="sticky z-20 top-0 start-0 border-b border-transparent transition-all py-5">
+        <div class="max-w-screen-xl mx-auto px-5">
+            <nav class="w-full">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+                    <a href="./" class="text-lg flex items-center rounded-full rtl:space-x-reverse">
+                        <span class="font-bold text-indigo-600">Astro</span>
+                        <span class="text-slate-600">ship</span>
+                        <span class="text-[10px] font-bold bg-gray-200 text-slate-700 px-2 py-1 rounded-md leading-none ml-1 mt-0.5">
                 PRO
               </span>
-            </a>
-            <div
-              class="hidden lg:flex items-center gap-4 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-              <a href="#" class="text-sm px-2 py-1 rounded-full">Log in</a>
-              <a
-                href="#"
-                class="group transition text-center px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-800 inline-flex items-center gap-px rounded-full">
-                <span>Try for Free</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
+                    </a>
+                    <div class="hidden lg:flex items-center gap-4 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                        <a href="#" class="text-sm px-2 py-1 rounded-full">Log in</a>
+                        <a href="#" class="group transition text-center px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-800 inline-flex items-center gap-px rounded-full">
+                            <span>Try for Free</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
                   <path
                     fill-rule="evenodd"
                     d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                     clip-rule="evenodd"></path>
                 </svg>
-              </a>
-            </div>
-            <button
-              id="navBarDropDown"
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              class="block lg:hidden"
-              aria-controls="navbar-sticky"
-              aria-expanded="false">
+                        </a>
+                    </div>
+                    <button id="navBarDropDown" data-collapse-toggle="navbar-sticky" type="button" class="block lg:hidden" aria-controls="navbar-sticky" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg
                 class="w-4 h-4 text-gray-800"
@@ -69,16 +53,10 @@
                   d="M1 1h15M1 7h15M1 13h15" />
               </svg>
             </button>
-            <div
-              class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
-              id="navbar-sticky">
-              <ul
-                class="flex flex-col lg:p-0 font-medium lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent">
-                <li>
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="dropdownNavbar"
-                    class="flex items-center gap-1 text-sm rounded-full w-full py-2 px-1 text-gray-600 hover:text-indigo-600">
+                    <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
+                        <ul class="flex flex-col lg:p-0 font-medium lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent">
+                            <li>
+                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center gap-1 text-sm rounded-full w-full py-2 px-1 text-gray-600 hover:text-indigo-600">
                     Pages
                     <svg
                       id="dropdownArrow"
@@ -95,156 +73,107 @@
                         d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                     </svg>
                   </button>
-                  <!-- Dropdown menu -->
-                  <div
-                    id="dropdownNavbar"
-                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-full lg:w-48">
-                    <ul
-                      class="py-1 text-sm text-gray-600"
-                      aria-labelledby="dropdownLargeButton">
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-3 py-2 hover:text-indigo-600">
+                                <!-- Dropdown menu -->
+                                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-full lg:w-48">
+                                    <ul class="py-1 text-sm text-gray-600" aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="#" class="block px-3 py-2 hover:text-indigo-600">
                           Features
                         </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-3 py-2 hover:text-indigo-600 rounded">
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-3 py-2 hover:text-indigo-600 rounded">
                           Intergrations
                         </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-3 py-2 hover:text-indigo-600 rounded">
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-3 py-2 hover:text-indigo-600 rounded">
                           Blog Details
                         </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-3 py-2 hover:text-indigo-600 rounded">
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-3 py-2 hover:text-indigo-600 rounded">
                           404 Page
                         </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1"
-                    aria-current="page">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1" aria-current="page">
                     Pricing
                   </a>
-                </li>
-                <li>
-                  <a
-                    href="./about"
-                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1">
+                            </li>
+                            <li>
+                                <a href="./about" class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1">
                     About
                   </a>
-                </li>
-                <li>
-                  <a
-                    href="./blog"
-                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1">
+                            </li>
+                            <li>
+                                <a href="./blog" class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1">
                     Blog
                   </a>
-                </li>
-                <li>
-                  <a
-                    href="./contact"
-                    class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1">
+                            </li>
+                            <li>
+                                <a href="./contact" class="block text-sm text-gray-600 hover:text-indigo-600 rounded-full py-2 px-1">
                     Contact
                   </a>
-                </li>
-                <div
-                  class="lg:hidden flex items-center mt-3 gap-4 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                  <a
-                    href="#"
-                    class="text-center text-sm w-full px-5 py-2 bg-gray-100 hover:bg-gray-200 border-2 border-transparent rounded-full">
+                            </li>
+                            <div class="lg:hidden flex items-center mt-3 gap-4 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                                <a href="#" class="text-center text-sm w-full px-5 py-2 bg-gray-100 hover:bg-gray-200 border-2 border-transparent rounded-full">
                     Log in
                   </a>
-                  <a
-                    href="#"
-                    class="text-center text-sm w-full px-5 py-2 bg-indigo-600 text-white hover:bg-indigo-800 rounded-full">
-                    <span>Try for Free</span>
-                  </a>
+                                <a href="#" class="text-center text-sm w-full px-5 py-2 bg-indigo-600 text-white hover:bg-indigo-800 rounded-full">
+                                    <span>Try for Free</span>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-      <!-- Banner -->
-      <section class="banner overflow-x-clip">
-        <div class="max-w-screen-xl mx-auto px-5">
-          <div class="grid lg:grid-cols-5 place-items-center relative">
-            <div
-              class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial-1 from-indigo-200 right-0 top-0"></div>
-            <div
-              class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial-2 from-purple-200 right-56 top-10"></div>
-            <div class="max-w-sm md:max-w-max lg:col-span-2">
-              <h1
-                class="text-3xl lg:text-4xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter text-balance text-center lg:text-start">
-                Create websites with Astroship™
-              </h1>
-              <p
-                class="text-lg text-slate-600 text-balance text-center mt-4 lg:text-start">
-                Pro version of popular Astroship starter template made for
-                startups. Built with Astro and Tailwind CSS.
-              </p>
-              <div
-                class="mt-6 flex flex-col sm:flex-row sm:justify-center gap-3 lg:justify-start">
-                <a
-                  href="https://web3templates.com/templates/astroship-pro-astro-saas-website-template"
-                  target="_blank"
-                  class="rounded-full text-center transition px-7 py-2.5 bg-indigo-600 text-white hover:bg-indigo-800 flex gap-1 items-center justify-center">
+        <!-- Banner -->
+        <section class="banner overflow-x-clip">
+            <div class="max-w-screen-xl mx-auto px-5">
+                <div class="grid lg:grid-cols-5 place-items-center relative">
+                    <div class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial-1 from-indigo-200 right-0 top-0"></div>
+                    <div class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial-2 from-purple-200 right-56 top-10"></div>
+                    <div class="max-w-sm md:max-w-max lg:col-span-2">
+                        <h1 class="text-3xl lg:text-4xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter text-balance text-center lg:text-start">
+                            Create websites with Astroship™
+                        </h1>
+                        <p class="text-lg text-slate-600 text-balance text-center mt-4 lg:text-start">
+                            Pro version of popular Astroship starter template made for startups. Built with Astro and Tailwind CSS.
+                        </p>
+                        <div class="mt-6 flex flex-col sm:flex-row sm:justify-center gap-3 lg:justify-start">
+                            <a href="https://web3templates.com/templates/astroship-pro-astro-saas-website-template" target="_blank" class="rounded-full text-center transition px-7 py-2.5 bg-indigo-600 text-white hover:bg-indigo-800 flex gap-1 items-center justify-center">
                   Buy Template — $49
                 </a>
-                <a
-                  href="https://github.com/surjithctly/astroship"
-                  target="_blank"
-                  class="rounded-full text-center transition px-7 py-2.5 bg-white border-2 border-indigo-500 hover:bg-indigo-50 text-indigo-600 flex gap-1 items-center justify-center">
+                            <a href="https://github.com/surjithctly/astroship" target="_blank" class="rounded-full text-center transition px-7 py-2.5 bg-white border-2 border-indigo-500 hover:bg-indigo-50 text-indigo-600 flex gap-1 items-center justify-center">
                   Free Version
                 </a>
-              </div>
+                        </div>
+                    </div>
+                    <div class="py-3 lg:col-span-3 lg:-mr-44">
+                        <img src="./assets/img/hero-screenshot.avif" alt="Banner" class="w-full mx-auto" />
+                    </div>
+                </div>
             </div>
-            <div class="py-3 lg:col-span-3 lg:-mr-44">
-              <img
-                src="./assets/img/hero-screenshot.avif"
-                alt="Banner"
-                class="w-full mx-auto" />
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Startups  -->
-      <section class="startups">
-        <div class="max-w-screen-xl mx-auto px-5">
-          <div>
-            <h2 class="text-center text-slate-500">
-              Trusted by popular startups you know
-            </h2>
-            <div
-              class="flex gap-x-8 gap-y-4 md:gap-20 lg:gap-28 items-center justify-center mt-6 flex-wrap">
-              <div class="text-gray-500 my-2 h-7 md:h-9">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  fill="currentColor"
-                  height="48"
-                  viewBox="0 0 97 48"
-                  width="97"
-                  class="h-full w-auto">
+        <!-- Startups  -->
+        <section class="startups">
+            <div class="max-w-screen-xl mx-auto px-5">
+                <div>
+                    <h2 class="text-center text-slate-500">
+                        Trusted by popular startups you know
+                    </h2>
+                    <div class="flex gap-x-8 gap-y-4 md:gap-20 lg:gap-28 items-center justify-center mt-6 flex-wrap">
+                        <div class="text-gray-500 my-2 h-7 md:h-9">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" height="48" viewBox="0 0 97 48" width="97" class="h-full w-auto">
                   <clipPath id="a"><path d="m0 0h97v48h-97z"></path></clipPath>
                   <g clip-path="url(#a)" fill="current">
                     <path
@@ -253,15 +182,9 @@
                       fill-rule="evenodd"></path>
                   </g>
                 </svg>
-              </div>
-              <div class="text-gray-500 my-2 h-7 md:h-9">
-                <svg
-                  viewBox="0 0 106 31"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="106"
-                  height="31"
-                  class="h-full w-auto">
+                        </div>
+                        <div class="text-gray-500 my-2 h-7 md:h-9">
+                            <svg viewBox="0 0 106 31" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="106" height="31" class="h-full w-auto">
                   <g clip-path="url(#clip-hubspot-mono)">
                     <path
                       d="M11.5651 5.62866V14.0394H3.8408V5.62866H0.173584V25.7058H3.8408V17.5682H11.5651V25.7058H15.2323V5.62866H11.5651Z"></path>
@@ -289,15 +212,9 @@
                     </clipPath>
                   </defs>
                 </svg>
-              </div>
-              <div class="text-gray-500 my-2 h-7 md:h-9">
-                <svg
-                  fill="currentColor"
-                  viewBox="0 0 175 48"
-                  width="175"
-                  height="48"
-                  class="h-full w-auto"
-                  xmlns="http://www.w3.org/2000/svg">
+                        </div>
+                        <div class="text-gray-500 my-2 h-7 md:h-9">
+                            <svg fill="currentColor" viewBox="0 0 175 48" width="175" height="48" class="h-full w-auto" xmlns="http://www.w3.org/2000/svg">
                   <g fill="current">
                     <path
                       d="m37.6816794 0h-32.06106871c-2.9509542 0-5.34351145 2.39255725-5.34351145 5.34351145v32.06106875c0 2.9509542 2.39255725 5.3435114 5.34351145 5.3435114h32.06106871c2.9509542 0 5.3435114-2.3925572 5.3435114-5.3435114v-32.06106875c0-2.9509542-2.3925572-5.34351145-5.3435114-5.34351145zm-10.3316794 7.83759542c0-.78683206.6385496-1.42538168 1.4253817-1.42538168.786832 0 1.4253817.63854962 1.4253817 1.42538168v19.03759538c0 .7868321-.6385497 1.4253817-1.4253817 1.4253817-.7868321 0-1.4253817-.6385496-1.4253817-1.4253817zm-7.1242366-.72137405c0-.78683206.6385496-1.42538168 1.4253816-1.42538168.7868321 0 1.4253817.63854962 1.4253817 1.42538168v20.66202293c0 .786832-.6385496 1.4253817-1.4253817 1.4253817-.786832 0-1.4253816-.6385497-1.4253816-1.4253817zm-7.1242367.72137405c0-.78683206.6385496-1.42538168 1.4253817-1.42538168s1.4240458.63854962 1.4240458 1.42538168v19.03759538c0 .7868321-.6372137 1.4253817-1.4240458 1.4253817s-1.4253817-.6385496-1.4253817-1.4253817zm-7.12423662 2.84942748c0-.78683206.63721374-1.42538168 1.4240458-1.42538168s1.42538168.63854962 1.42538168 1.42538168v12.8164122c0 .7868321-.63854962 1.4253817-1.42538168 1.4253817s-1.4240458-.6385496-1.4240458-1.4253817zm30.85076332 21.7347328c-.2190839.1896947-5.4984732 4.6181298-15.1769084 4.6181298-9.6784351 0-14.95515263-4.4284351-15.17690836-4.6181298-.5971374-.5116412-.66793893-1.410687-.15496183-2.0091603.51030534-.5958015 1.40801527-.666603 2.00515267-.1562977.08282443.0694657 4.79713742 3.9341603 13.32538172 3.9341603 8.6351145 0 13.2759542-3.8927481 13.321374-3.9314885.5958015-.5129771 1.4975191-.4435115 2.0078244.1536259.5156489.5984733.4461832 1.4975191-.1509542 2.0091603zm.4969466-8.9183206c0 .7868321-.6385496 1.4253817-1.4253817 1.4253817-.786832 0-1.4240458-.6385496-1.4240458-1.4253817v-12.8164122c0-.78683206.6372138-1.42538168 1.4240458-1.42538168.7868321 0 1.4253817.63854962 1.4253817 1.42538168z"
@@ -322,15 +239,9 @@
                     </g>
                   </g>
                 </svg>
-              </div>
-              <div class="text-gray-500 my-2 h-7 md:h-9">
-                <svg
-                  viewBox="0 0 175 48"
-                  width="175"
-                  height="48"
-                  class="h-full w-auto"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor">
+                        </div>
+                        <div class="text-gray-500 my-2 h-7 md:h-9">
+                            <svg viewBox="0 0 175 48" width="175" height="48" class="h-full w-auto" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                   <g fill="current" transform="translate(3 7)">
                     <path
                       d="m56.6548259 25.3816928c-4.1385107 0-7.493381-3.4354677-7.493381-7.6740785 0-4.2375322 3.3548703-7.6729999 7.493381-7.6729999s7.4930223 3.4354677 7.4930223 7.6729999c0 4.2386108-3.3545116 7.6740785-7.4930223 7.6740785zm7.5167037.9731908c.1033371 1.1773918 1.0441361 2.6765442 2.6742084 2.6765442h.9537161c.3695739 0 .6727681-.3034255.6727681-.6737198v-20.9992784h-.0043057c-.0190169-.35375682-.311088-.6374094-.6684624-.6374094h-2.9551564c-.3573744 0-.6494455.28365258-.66918.6374094h-.0035881v1.70622957c-1.8109123-2.23434825-4.665602-3.16188139-7.5281855-3.16188139-6.5070133 0-11.782233 5.28514132-11.782233 11.80483652 0 6.5204142 5.2752197 11.8055555 11.782233 11.8055555v.0007191c2.8625835 0 5.9824335-1.1130398 7.5278267-3.1618814zm40.8858944-.9731908c-4.138215 0-7.4934948-3.4354677-7.4934948-7.6740785 0-4.2375322 3.3552798-7.6729999 7.4934948-7.6729999 4.138574 0 7.493136 3.4354677 7.493136 7.6729999 0 4.2386108-3.354562 7.6740785-7.493136 7.6740785zm7.516818.9731908c.103339 1.1773918 1.044152 2.6765442 2.674249 2.6765442h.954089c.36958 0 .67242-.3034255.67242-.6737198v-20.9992784h-.003947c-.019376-.35375682-.311452-.6374094-.668473-.6374094h-2.95556c-.357379 0-.649096.28365258-.66919.6374094h-.003588v1.70622957c-1.81094-2.23434825-4.665673-3.16188139-7.5283-3.16188139-6.5071121 0-11.7820531 5.28514132-11.7820531 11.80483652 0 6.5204142 5.274941 11.8055555 11.7820531 11.8055555v.0007191c2.862627 0 5.982524-1.1130398 7.527941-3.1618814z"></path>
@@ -346,69 +257,50 @@
                       d="m29.3846129 17.7727549c-4.4470501 0-8.0526208 3.6853272-8.0526208 8.2319352 0 4.5458734 3.6055707 8.2315679 8.0526208 8.2315679 4.4474094 0 8.0529801-3.6856945 8.0529801-8.2315679 0-4.546608-3.6055707-8.2319352-8.0529801-8.2319352"></path>
                   </g>
                 </svg>
-              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Features #1 -->
-      <section class="features">
-        <div class="max-w-screen-xl mx-auto px-5">
-          <div
-            class="max-w-4xl mx-auto flex flex-col justify-center items-center mt-24">
-            <span
-              class="text-xs font-medium text-purple-600 bg-purple-100 border border-purple-200 rounded-full px-3 py-1">
+        <!-- Features #1 -->
+        <section class="features">
+            <div class="max-w-screen-xl mx-auto px-5">
+                <div class="max-w-4xl mx-auto flex flex-col justify-center items-center mt-24">
+                    <span class="text-xs font-medium text-purple-600 bg-purple-100 border border-purple-200 rounded-full px-3 py-1">
               TWO-COL FEATURES
             </span>
-            <h2
-              class="text-center text-4xl lg:text-5xl font-bold lg:tracking-tight mt-4">
-              Supercharge Your Workflows
-            </h2>
-            <p class="text-center text-lg text-slate-600 text-pretty mt-4">
-              Unlock your team's true potential with our state-of-the-art SaaS
-              platform. From intelligent task management to real-time
-              collaboration and top-notch data security, we have everything you
-              need to streamline your workflows and achieve high productivity.
-            </p>
-          </div>
-        </div>
-      </section>
+                    <h2 class="text-center text-4xl lg:text-5xl font-bold lg:tracking-tight mt-4">
+                        Supercharge Your Workflows
+                    </h2>
+                    <p class="text-center text-lg text-slate-600 text-pretty mt-4">
+                        Unlock your team's true potential with our state-of-the-art SaaS platform. From intelligent task management to real-time collaboration and top-notch data security, we have everything you need to streamline your workflows and achieve high productivity.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-      <!-- Workflows -->
-      <section class="workflows max-w-screen-xl mx-auto px-5">
-        <!-- Workflows #1 -->
-        <div class="grid md:grid-cols-2 py-10">
-          <div class="grid place-items-center">
-            <img
-              src="./assets/img/workflows.avif"
-              alt="Feature Image"
-              loading="lazy"
-              decoding="async" />
-          </div>
-          <div class="grid place-items-center">
-            <div class="max-w-lg">
-              <span
-                class="text-xs font-medium text-purple-600 bg-purple-100 border border-purple-200 rounded-full px-3 py-1 -ml-px">
+        <!-- Workflows -->
+        <section class="workflows max-w-screen-xl mx-auto px-5">
+            <!-- Workflows #1 -->
+            <div class="grid md:grid-cols-2 py-10">
+                <div class="grid place-items-center">
+                    <img src="./assets/img/workflows.avif" alt="Feature Image" loading="lazy" decoding="async" />
+                </div>
+                <div class="grid place-items-center">
+                    <div class="max-w-lg">
+                        <span class="text-xs font-medium text-purple-600 bg-purple-100 border border-purple-200 rounded-full px-3 py-1 -ml-px">
                 Simplified Workflows
               </span>
-              <h3 class="text-2xl font-medium text-balance mt-4">
-                Experience the Ultimate Boost in Productivity with Our Intuitive
-                Platform
-              </h3>
-              <p class="text-slate-600 text-balance mt-4">
-                Streamline your tasks and collaborate seamlessly with our
-                cutting-edge SaaS startup platform. Unlock the potential of your
-                team and take productivity to new heights.
-              </p>
-              <ul class="grid text-left gap-y-4 mt-6">
-                <li class="flex items-center text-neutral-800 gap-3">
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 256 256"
-                    class="w-5 h-5"
-                    data-icon="ph:check-circle-fill">
+                        <h3 class="text-2xl font-medium text-balance mt-4">
+                            Experience the Ultimate Boost in Productivity with Our Intuitive Platform
+                        </h3>
+                        <p class="text-slate-600 text-balance mt-4">
+                            Streamline your tasks and collaborate seamlessly with our cutting-edge SaaS startup platform. Unlock the potential of your team and take productivity to new heights.
+                        </p>
+                        <ul class="grid text-left gap-y-4 mt-6">
+                            <li class="flex items-center text-neutral-800 gap-3">
+                                <svg width="1em" height="1em" viewBox="0 0 256 256" class="w-5 h-5" data-icon="ph:check-circle-fill">
                     <symbol id="ai:ph:check-circle-fill">
                       <path
                         fill="currentColor"
@@ -416,15 +308,10 @@
                     </symbol>
                     <use xlink:href="#ai:ph:check-circle-fill"></use>
                   </svg>
-                  <span>Intelligent Task Management</span>
-                </li>
-                <li class="flex items-center text-neutral-800 gap-3">
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 256 256"
-                    class="w-5 h-5"
-                    data-icon="ph:check-circle-fill">
+                                <span>Intelligent Task Management</span>
+                            </li>
+                            <li class="flex items-center text-neutral-800 gap-3">
+                                <svg width="1em" height="1em" viewBox="0 0 256 256" class="w-5 h-5" data-icon="ph:check-circle-fill">
                     <symbol id="ai:ph:check-circle-fill">
                       <path
                         fill="currentColor"
@@ -432,15 +319,10 @@
                     </symbol>
                     <use xlink:href="#ai:ph:check-circle-fill"></use>
                   </svg>
-                  <span>Real-time Collaboration</span>
-                </li>
-                <li class="flex items-center text-neutral-800 gap-3">
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 256 256"
-                    class="w-5 h-5"
-                    data-icon="ph:check-circle-fill">
+                                <span>Real-time Collaboration</span>
+                            </li>
+                            <li class="flex items-center text-neutral-800 gap-3">
+                                <svg width="1em" height="1em" viewBox="0 0 256 256" class="w-5 h-5" data-icon="ph:check-circle-fill">
                     <symbol id="ai:ph:check-circle-fill">
                       <path
                         fill="currentColor"
@@ -448,65 +330,45 @@
                     </symbol>
                     <use xlink:href="#ai:ph:check-circle-fill"></use>
                   </svg>
-                  <span>Data Security & Privacy</span>
-                </li>
-              </ul>
-              <div class="flex items-center gap-4 mt-6">
-                <a
-                  href="#"
-                  class="group transition text-center px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-800 inline-flex items-center gap-px rounded-full">
-                  <span>Start 14-day trial</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
+                                <span>Data Security & Privacy</span>
+                            </li>
+                        </ul>
+                        <div class="flex items-center gap-4 mt-6">
+                            <a href="#" class="group transition text-center px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-800 inline-flex items-center gap-px rounded-full">
+                                <span>Start 14-day trial</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
                     <path
                       fill-rule="evenodd"
                       d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                       clip-rule="evenodd"></path>
                   </svg>
-                </a>
-                <a
-                  href="#"
-                  class="text-sm transition text-slate-600 hover:text-indigo-600 px-2 py-1 rounded-full">
+                            </a>
+                            <a href="#" class="text-sm transition text-slate-600 hover:text-indigo-600 px-2 py-1 rounded-full">
                   Contact Sales
                 </a>
-              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <!-- Workflows #2 -->
-        <div class="grid md:grid-cols-2 py-10">
-          <div class="grid place-items-center pb-10 md:pb-0 md:order-2">
-            <img
-              src="./assets/img/workflows2.avif"
-              alt="Feature Image"
-              loading="lazy"
-              decoding="async" />
-          </div>
-          <div class="grid place-items-center">
-            <div class="max-w-lg">
-              <span
-                class="text-xs font-medium text-purple-600 bg-purple-100 border border-purple-200 rounded-full px-3 py-1 -ml-px">
+            <!-- Workflows #2 -->
+            <div class="grid md:grid-cols-2 py-10">
+                <div class="grid place-items-center pb-10 md:pb-0 md:order-2">
+                    <img src="./assets/img/workflows2.avif" alt="Feature Image" loading="lazy" decoding="async" />
+                </div>
+                <div class="grid place-items-center">
+                    <div class="max-w-lg">
+                        <span class="text-xs font-medium text-purple-600 bg-purple-100 border border-purple-200 rounded-full px-3 py-1 -ml-px">
                 AI-Powered Insights
               </span>
-              <h3 class="text-2xl font-medium text-balance mt-4">
-                Supercharge Your Marketing Strategy with Advanced Analytics
-              </h3>
-              <p class="text-slate-600 text-balance mt-4">
-                Harness the potential of AI-driven marketing analytics to
-                optimize your campaigns, understand your audience better, and
-                achieve unprecedented growth.
-              </p>
-              <ul class="grid text-left gap-y-4 mt-6">
-                <li class="flex items-center text-neutral-800 gap-3">
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 256 256"
-                    class="w-5 h-5"
-                    data-icon="ph:check-circle-fill">
+                        <h3 class="text-2xl font-medium text-balance mt-4">
+                            Supercharge Your Marketing Strategy with Advanced Analytics
+                        </h3>
+                        <p class="text-slate-600 text-balance mt-4">
+                            Harness the potential of AI-driven marketing analytics to optimize your campaigns, understand your audience better, and achieve unprecedented growth.
+                        </p>
+                        <ul class="grid text-left gap-y-4 mt-6">
+                            <li class="flex items-center text-neutral-800 gap-3">
+                                <svg width="1em" height="1em" viewBox="0 0 256 256" class="w-5 h-5" data-icon="ph:check-circle-fill">
                     <symbol id="ai:ph:check-circle-fill">
                       <path
                         fill="currentColor"
@@ -514,15 +376,10 @@
                     </symbol>
                     <use xlink:href="#ai:ph:check-circle-fill"></use>
                   </svg>
-                  <span>Smart Audience Segmentation</span>
-                </li>
-                <li class="flex items-center text-neutral-800 gap-3">
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 256 256"
-                    class="w-5 h-5"
-                    data-icon="ph:check-circle-fill">
+                                <span>Smart Audience Segmentation</span>
+                            </li>
+                            <li class="flex items-center text-neutral-800 gap-3">
+                                <svg width="1em" height="1em" viewBox="0 0 256 256" class="w-5 h-5" data-icon="ph:check-circle-fill">
                     <symbol id="ai:ph:check-circle-fill">
                       <path
                         fill="currentColor"
@@ -530,15 +387,10 @@
                     </symbol>
                     <use xlink:href="#ai:ph:check-circle-fill"></use>
                   </svg>
-                  <span>Predictive Campaign Performance</span>
-                </li>
-                <li class="flex items-center text-neutral-800 gap-3">
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 256 256"
-                    class="w-5 h-5"
-                    data-icon="ph:check-circle-fill">
+                                <span>Predictive Campaign Performance</span>
+                            </li>
+                            <li class="flex items-center text-neutral-800 gap-3">
+                                <svg width="1em" height="1em" viewBox="0 0 256 256" class="w-5 h-5" data-icon="ph:check-circle-fill">
                     <symbol id="ai:ph:check-circle-fill">
                       <path
                         fill="currentColor"
@@ -546,546 +398,361 @@
                     </symbol>
                     <use xlink:href="#ai:ph:check-circle-fill"></use>
                   </svg>
-                  <span>Real-time Data Visualization</span>
-                </li>
-              </ul>
-              <div class="flex items-center gap-4 mt-6">
-                <a
-                  href="#"
-                  class="group transition text-center px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-800 inline-flex items-center gap-px rounded-full">
-                  <span>Start 14-day trial</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
+                                <span>Real-time Data Visualization</span>
+                            </li>
+                        </ul>
+                        <div class="flex items-center gap-4 mt-6">
+                            <a href="#" class="group transition text-center px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-800 inline-flex items-center gap-px rounded-full">
+                                <span>Start 14-day trial</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
                     <path
                       fill-rule="evenodd"
                       d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                       clip-rule="evenodd"></path>
                   </svg>
-                </a>
-                <a
-                  href="#"
-                  class="text-sm transition text-slate-600 hover:text-indigo-600 px-2 py-1 rounded-full">
+                            </a>
+                            <a href="#" class="text-sm transition text-slate-600 hover:text-indigo-600 px-2 py-1 rounded-full">
                   Contact Sales
                 </a>
-              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Testimonials -->
-      <section class="testimonials mt-24">
-        <div class="max-w-screen-xl mx-auto px-5">
-          <h2
-            class="text-center text-4xl lg:text-5xl font-bold lg:tracking-tight">
-            Client
-            <span class="text-indigo-600">Testimonials</span>
-          </h2>
-          <p class="text-center text-lg text-slate-600 mt-4">
-            Astroship is trusted by the world's leading companies and brands.
-          </p>
-        </div>
-        <!-- Marquee -->
-        <div class="overflow-x-clip mt-10 relative">
-          <div
-            class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial-3 from-indigo-100 right-1/3 -top-10"></div>
-          <div
-            class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial-4 from-purple-100 right-1/3 translate-x-2/3 top-10"></div>
-          <div class="group md:flex gap-10 overflow-hidden py-5 relative">
-            <div
-              class="md:motion-safe:animate-marquee w-auto py-5 overflow-x-auto flex flex-nowrap min-w-full shrink-0 items-stretch gap-10 snap-x snap-mandatory px-5">
-              <div
-                class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
-                <blockquote class="text-lg md:text-xl text-balance">
-                  Astroship has transformed the way we manage our projects. Its
-                  well-designed interface and powerful features make it a
-                  must-have tool for any startup. We've seen a great increase in
-                  our productivity and collaboration.
-                </blockquote>
-                <div class="flex items-center gap-3 mt-10">
-                  <div class="shrink-0">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover bg-slate-100"
-                      src="./assets/img/johndoe.avif"
-                      alt="John Doe"
-                      loading="lazy"
-                      decoding="async" />
-                  </div>
-                  <div>
-                    <h2 class="font-medium text-slate-800">John Doe</h2>
-                    <p class="text-sm text-slate-600">CEO at TechCorp</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
-                <blockquote class="text-lg md:text-xl text-balance">
-                  Astroship has transformed the way we manage our projects. Its
-                  well-designed interface and powerful features make it a
-                  must-have tool for any startup. We've seen a great increase in
-                  our productivity and collaboration.
-                </blockquote>
-                <div class="flex items-center gap-3 mt-10">
-                  <div class="shrink-0">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover bg-slate-100"
-                      src="./assets/img/janesmith.avif"
-                      alt="Jane Smith"
-                      loading="lazy"
-                      decoding="async" />
-                  </div>
-                  <div>
-                    <h2 class="font-medium text-slate-800">Jane Smith</h2>
-                    <p class="text-sm text-slate-600">
-                      Marketing Manager at InnovateTech
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
-                <blockquote class="text-lg md:text-xl text-balance">
-                  Astroship has transformed the way we manage our projects. Its
-                  well-designed interface and powerful features make it a
-                  must-have tool for any startup. We've seen a great increase in
-                  our productivity and collaboration.
-                </blockquote>
-                <div class="flex items-center gap-3 mt-10">
-                  <div class="shrink-0">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover bg-slate-100"
-                      src="./assets/img/mikejohnson.avif"
-                      alt="Mike Johnson"
-                      loading="lazy"
-                      decoding="async" />
-                  </div>
-                  <div>
-                    <h2 class="font-medium text-slate-800">Mike Johnson</h2>
-                    <p class="text-sm text-slate-600">CTO at CloudNine</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
-                <blockquote class="text-lg md:text-xl text-balance">
-                  Astroship has transformed the way we manage our projects. Its
-                  well-designed interface and powerful features make it a
-                  must-have tool for any startup. We've seen a great increase in
-                  our productivity and collaboration.
-                </blockquote>
-                <div class="flex items-center gap-3 mt-10">
-                  <div class="shrink-0">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover bg-slate-100"
-                      src="./assets/img/emilybrown.avif"
-                      alt="Emily Brown"
-                      loading="lazy"
-                      decoding="async" />
-                  </div>
-                  <div>
-                    <h2 class="font-medium text-slate-800">Emily Brown</h2>
-                    <p class="text-sm text-slate-600">
-                      HR Manager at ConnectCo
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
-                <blockquote class="text-lg md:text-xl text-balance">
-                  Astroship has transformed the way we manage our projects. Its
-                  well-designed interface and powerful features make it a
-                  must-have tool for any startup. We've seen a great increase in
-                  our productivity and collaboration.
-                </blockquote>
-                <div class="flex items-center gap-3 mt-10">
-                  <div class="shrink-0">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover bg-slate-100"
-                      src="./assets/img/davidlee.avif"
-                      alt="David Lee"
-                      loading="lazy"
-                      decoding="async" />
-                  </div>
-                  <div>
-                    <h2 class="font-medium text-slate-800">David Lee</h2>
-                    <p class="text-sm text-slate-600">
-                      Sales Director at Linkify
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
-                <blockquote class="text-lg md:text-xl text-balance">
-                  Astroship has transformed the way we manage our projects. Its
-                  well-designed interface and powerful features make it a
-                  must-have tool for any startup. We've seen a great increase in
-                  our productivity and collaboration.
-                </blockquote>
-                <div class="flex items-center gap-3 mt-10">
-                  <div class="shrink-0">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover bg-slate-100"
-                      src="./assets/img/sarahmartinez.avif"
-                      alt="Sarah Martinez"
-                      loading="lazy"
-                      decoding="async" />
-                  </div>
-                  <div>
-                    <h2 class="font-medium text-slate-800">Sarah Martinez</h2>
-                    <p class="text-sm text-slate-600">
-                      Finance Controller at MoneyMakers
-                    </p>
-                  </div>
-                </div>
-              </div>
+        <!-- Testimonials -->
+        <section class="testimonials mt-24">
+            <div class="max-w-screen-xl mx-auto px-5">
+                <h2 class="text-center text-4xl lg:text-5xl font-bold lg:tracking-tight">
+                    Client
+                    <span class="text-indigo-600">Testimonials</span>
+                </h2>
+                <p class="text-center text-lg text-slate-600 mt-4">
+                    Astroship is trusted by the world's leading companies and brands.
+                </p>
             </div>
-            <div
-              class="md:motion-safe:animate-marquee hidden md:motion-reduce:hidden md:flex min-w-full shrink-0 items-center gap-10">
-              <div
-                class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
-                <blockquote class="text-lg md:text-xl text-balance">
-                  Astroship has transformed the way we manage our projects. Its
-                  well-designed interface and powerful features make it a
-                  must-have tool for any startup. We've seen a great increase in
-                  our productivity and collaboration.
-                </blockquote>
-                <div class="flex items-center gap-3 mt-10">
-                  <div class="shrink-0">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover bg-slate-100"
-                      src="./assets/img/johndoe.avif"
-                      alt="John Doe"
-                      loading="lazy"
-                      decoding="async" />
-                  </div>
-                  <div>
-                    <h2 class="font-medium text-slate-800">John Doe</h2>
-                    <p class="text-sm text-slate-600">CEO at TechCorp</p>
-                  </div>
+            <!-- Marquee -->
+            <div class="overflow-x-clip mt-10 relative">
+                <div class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial-3 from-indigo-100 right-1/3 -top-10"></div>
+                <div class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial-4 from-purple-100 right-1/3 translate-x-2/3 top-10"></div>
+                <div class="group md:flex gap-10 overflow-hidden py-5 relative">
+                    <div class="md:motion-safe:animate-marquee w-auto py-5 overflow-x-auto flex flex-nowrap min-w-full shrink-0 items-stretch gap-10 snap-x snap-mandatory px-5">
+                        <div class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
+                            <blockquote class="text-lg md:text-xl text-balance">
+                                Astroship has transformed the way we manage our projects. Its well-designed interface and powerful features make it a must-have tool for any startup. We've seen a great increase in our productivity and collaboration.
+                            </blockquote>
+                            <div class="flex items-center gap-3 mt-10">
+                                <div class="shrink-0">
+                                    <img class="rounded-full w-12 h-12 object-cover bg-slate-100" src="./assets/img/johndoe.avif" alt="John Doe" loading="lazy" decoding="async" />
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-slate-800">John Doe</h2>
+                                    <p class="text-sm text-slate-600">CEO at TechCorp</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
+                            <blockquote class="text-lg md:text-xl text-balance">
+                                Astroship has transformed the way we manage our projects. Its well-designed interface and powerful features make it a must-have tool for any startup. We've seen a great increase in our productivity and collaboration.
+                            </blockquote>
+                            <div class="flex items-center gap-3 mt-10">
+                                <div class="shrink-0">
+                                    <img class="rounded-full w-12 h-12 object-cover bg-slate-100" src="./assets/img/janesmith.avif" alt="Jane Smith" loading="lazy" decoding="async" />
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-slate-800">Jane Smith</h2>
+                                    <p class="text-sm text-slate-600">
+                                        Marketing Manager at InnovateTech
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
+                            <blockquote class="text-lg md:text-xl text-balance">
+                                Astroship has transformed the way we manage our projects. Its well-designed interface and powerful features make it a must-have tool for any startup. We've seen a great increase in our productivity and collaboration.
+                            </blockquote>
+                            <div class="flex items-center gap-3 mt-10">
+                                <div class="shrink-0">
+                                    <img class="rounded-full w-12 h-12 object-cover bg-slate-100" src="./assets/img/mikejohnson.avif" alt="Mike Johnson" loading="lazy" decoding="async" />
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-slate-800">Mike Johnson</h2>
+                                    <p class="text-sm text-slate-600">CTO at CloudNine</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
+                            <blockquote class="text-lg md:text-xl text-balance">
+                                Astroship has transformed the way we manage our projects. Its well-designed interface and powerful features make it a must-have tool for any startup. We've seen a great increase in our productivity and collaboration.
+                            </blockquote>
+                            <div class="flex items-center gap-3 mt-10">
+                                <div class="shrink-0">
+                                    <img class="rounded-full w-12 h-12 object-cover bg-slate-100" src="./assets/img/emilybrown.avif" alt="Emily Brown" loading="lazy" decoding="async" />
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-slate-800">Emily Brown</h2>
+                                    <p class="text-sm text-slate-600">
+                                        HR Manager at ConnectCo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
+                            <blockquote class="text-lg md:text-xl text-balance">
+                                Astroship has transformed the way we manage our projects. Its well-designed interface and powerful features make it a must-have tool for any startup. We've seen a great increase in our productivity and collaboration.
+                            </blockquote>
+                            <div class="flex items-center gap-3 mt-10">
+                                <div class="shrink-0">
+                                    <img class="rounded-full w-12 h-12 object-cover bg-slate-100" src="./assets/img/davidlee.avif" alt="David Lee" loading="lazy" decoding="async" />
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-slate-800">David Lee</h2>
+                                    <p class="text-sm text-slate-600">
+                                        Sales Director at Linkify
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
+                            <blockquote class="text-lg md:text-xl text-balance">
+                                Astroship has transformed the way we manage our projects. Its well-designed interface and powerful features make it a must-have tool for any startup. We've seen a great increase in our productivity and collaboration.
+                            </blockquote>
+                            <div class="flex items-center gap-3 mt-10">
+                                <div class="shrink-0">
+                                    <img class="rounded-full w-12 h-12 object-cover bg-slate-100" src="./assets/img/sarahmartinez.avif" alt="Sarah Martinez" loading="lazy" decoding="async" />
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-slate-800">Sarah Martinez</h2>
+                                    <p class="text-sm text-slate-600">
+                                        Finance Controller at MoneyMakers
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:motion-safe:animate-marquee hidden md:motion-reduce:hidden md:flex min-w-full shrink-0 items-center gap-10">
+                        <div class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
+                            <blockquote class="text-lg md:text-xl text-balance">
+                                Astroship has transformed the way we manage our projects. Its well-designed interface and powerful features make it a must-have tool for any startup. We've seen a great increase in our productivity and collaboration.
+                            </blockquote>
+                            <div class="flex items-center gap-3 mt-10">
+                                <div class="shrink-0">
+                                    <img class="rounded-full w-12 h-12 object-cover bg-slate-100" src="./assets/img/johndoe.avif" alt="John Doe" loading="lazy" decoding="async" />
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-slate-800">John Doe</h2>
+                                    <p class="text-sm text-slate-600">CEO at TechCorp</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
+                            <blockquote class="text-lg md:text-xl text-balance">
+                                Astroship has transformed the way we manage our projects. Its well-designed interface and powerful features make it a must-have tool for any startup. We've seen a great increase in our productivity and collaboration.
+                            </blockquote>
+                            <div class="flex items-center gap-3 mt-10">
+                                <div class="shrink-0">
+                                    <img class="rounded-full w-12 h-12 object-cover bg-slate-100" src="./assets/img/janesmith.avif" alt="Jane Smith" loading="lazy" decoding="async" />
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-slate-800">Jane Smith</h2>
+                                    <p class="text-sm text-slate-600">
+                                        Marketing Manager at InnovateTech
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
+                            <blockquote class="text-lg md:text-xl text-balance">
+                                Astroship has transformed the way we manage our projects. Its well-designed interface and powerful features make it a must-have tool for any startup. We've seen a great increase in our productivity and collaboration.
+                            </blockquote>
+                            <div class="flex items-center gap-3 mt-10">
+                                <div class="shrink-0">
+                                    <img class="rounded-full w-12 h-12 object-cover bg-slate-100" src="./assets/img/mikejohnson.avif" alt="Mike Johnson" loading="lazy" decoding="async" />
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-slate-800">Mike Johnson</h2>
+                                    <p class="text-sm text-slate-600">CTO at CloudNine</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
+                            <blockquote class="text-lg md:text-xl text-balance">
+                                Astroship has transformed the way we manage our projects. Its well-designed interface and powerful features make it a must-have tool for any startup. We've seen a great increase in our productivity and collaboration.
+                            </blockquote>
+                            <div class="flex items-center gap-3 mt-10">
+                                <div class="shrink-0">
+                                    <img class="rounded-full w-12 h-12 object-cover bg-slate-100" src="./assets/img/emilybrown.avif" alt="Emily Brown" loading="lazy" decoding="async" />
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-slate-800">Emily Brown</h2>
+                                    <p class="text-sm text-slate-600">
+                                        HR Manager at ConnectCo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
+                            <blockquote class="text-lg md:text-xl text-balance">
+                                Astroship has transformed the way we manage our projects. Its well-designed interface and powerful features make it a must-have tool for any startup. We've seen a great increase in our productivity and collaboration.
+                            </blockquote>
+                            <div class="flex items-center gap-3 mt-10">
+                                <div class="shrink-0">
+                                    <img class="rounded-full w-12 h-12 object-cover bg-slate-100" src="./assets/img/davidlee.avif" alt="David Lee" loading="lazy" decoding="async" />
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-slate-800">David Lee</h2>
+                                    <p class="text-sm text-slate-600">
+                                        Sales Director at Linkify
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
+                            <blockquote class="text-lg md:text-xl text-balance">
+                                Astroship has transformed the way we manage our projects. Its well-designed interface and powerful features make it a must-have tool for any startup. We've seen a great increase in our productivity and collaboration.
+                            </blockquote>
+                            <div class="flex items-center gap-3 mt-10">
+                                <div class="shrink-0">
+                                    <img class="rounded-full w-12 h-12 object-cover bg-slate-100" src="./assets/img/sarahmartinez.avif" alt="Sarah Martinez" loading="lazy" decoding="async" />
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-slate-800">Sarah Martinez</h2>
+                                    <p class="text-sm text-slate-600">
+                                        Finance Controller at MoneyMakers
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div
-                class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
-                <blockquote class="text-lg md:text-xl text-balance">
-                  Astroship has transformed the way we manage our projects. Its
-                  well-designed interface and powerful features make it a
-                  must-have tool for any startup. We've seen a great increase in
-                  our productivity and collaboration.
-                </blockquote>
-                <div class="flex items-center gap-3 mt-10">
-                  <div class="shrink-0">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover bg-slate-100"
-                      src="./assets/img/janesmith.avif"
-                      alt="Jane Smith"
-                      loading="lazy"
-                      decoding="async" />
-                  </div>
-                  <div>
-                    <h2 class="font-medium text-slate-800">Jane Smith</h2>
-                    <p class="text-sm text-slate-600">
-                      Marketing Manager at InnovateTech
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
-                <blockquote class="text-lg md:text-xl text-balance">
-                  Astroship has transformed the way we manage our projects. Its
-                  well-designed interface and powerful features make it a
-                  must-have tool for any startup. We've seen a great increase in
-                  our productivity and collaboration.
-                </blockquote>
-                <div class="flex items-center gap-3 mt-10">
-                  <div class="shrink-0">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover bg-slate-100"
-                      src="./assets/img/mikejohnson.avif"
-                      alt="Mike Johnson"
-                      loading="lazy"
-                      decoding="async" />
-                  </div>
-                  <div>
-                    <h2 class="font-medium text-slate-800">Mike Johnson</h2>
-                    <p class="text-sm text-slate-600">CTO at CloudNine</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
-                <blockquote class="text-lg md:text-xl text-balance">
-                  Astroship has transformed the way we manage our projects. Its
-                  well-designed interface and powerful features make it a
-                  must-have tool for any startup. We've seen a great increase in
-                  our productivity and collaboration.
-                </blockquote>
-                <div class="flex items-center gap-3 mt-10">
-                  <div class="shrink-0">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover bg-slate-100"
-                      src="./assets/img/emilybrown.avif"
-                      alt="Emily Brown"
-                      loading="lazy"
-                      decoding="async" />
-                  </div>
-                  <div>
-                    <h2 class="font-medium text-slate-800">Emily Brown</h2>
-                    <p class="text-sm text-slate-600">
-                      HR Manager at ConnectCo
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
-                <blockquote class="text-lg md:text-xl text-balance">
-                  Astroship has transformed the way we manage our projects. Its
-                  well-designed interface and powerful features make it a
-                  must-have tool for any startup. We've seen a great increase in
-                  our productivity and collaboration.
-                </blockquote>
-                <div class="flex items-center gap-3 mt-10">
-                  <div class="shrink-0">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover bg-slate-100"
-                      src="./assets/img/davidlee.avif"
-                      alt="David Lee"
-                      loading="lazy"
-                      decoding="async" />
-                  </div>
-                  <div>
-                    <h2 class="font-medium text-slate-800">David Lee</h2>
-                    <p class="text-sm text-slate-600">
-                      Sales Director at Linkify
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="rounded-2xl relative p-8 bg-gray-50/60 backdrop-blur-md transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
-                <blockquote class="text-lg md:text-xl text-balance">
-                  Astroship has transformed the way we manage our projects. Its
-                  well-designed interface and powerful features make it a
-                  must-have tool for any startup. We've seen a great increase in
-                  our productivity and collaboration.
-                </blockquote>
-                <div class="flex items-center gap-3 mt-10">
-                  <div class="shrink-0">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover bg-slate-100"
-                      src="./assets/img/sarahmartinez.avif"
-                      alt="Sarah Martinez"
-                      loading="lazy"
-                      decoding="async" />
-                  </div>
-                  <div>
-                    <h2 class="font-medium text-slate-800">Sarah Martinez</h2>
-                    <p class="text-sm text-slate-600">
-                      Finance Controller at MoneyMakers
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Website -->
-      <section class="website">
-        <div class="max-w-screen-xl mx-auto px-5">
-          <div class="mt-24">
-            <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-              Everything you need to
-              <span class="text-indigo-600">start a website</span>
-            </h2>
-            <p class="text-lg text-slate-600 mt-4">
-              Astro comes batteries included. It takes the best parts of
-              state-of-the-art tools and adds its own innovations.
-            </p>
-          </div>
-          <!-- Grid #1 -->
-          <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mt-16">
-            <div
-              class="rounded-2xl p-8 bg-gray-50 transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg lg:col-span-3">
-              <div
-                class="relative overflow-hidden flex justify-center items-start h-auto lg:h-80">
-                <div
-                  class="absolute z-10 inset-0 bg-gradient-to-t from-gray-50 via-transparent"></div>
-                <img
-                  class="w-full h-full object-contain"
-                  src="./assets/img/responsivetemplate.avif"
-                  alt="Responsive Template"
-                  loading="lazy"
-                  decoding="async" />
-              </div>
-              <div class="mt-2">
-                <span
-                  class="text-xs font-medium bg-purple-100 border border-purple-200 text-purple-600 px-3 py-1 rounded-full">
+        <!-- Website -->
+        <section class="website">
+            <div class="max-w-screen-xl mx-auto px-5">
+                <div class="mt-24">
+                    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+                        Everything you need to
+                        <span class="text-indigo-600">start a website</span>
+                    </h2>
+                    <p class="text-lg text-slate-600 mt-4">
+                        Astro comes batteries included. It takes the best parts of state-of-the-art tools and adds its own innovations.
+                    </p>
+                </div>
+                <!-- Grid #1 -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mt-16">
+                    <div class="rounded-2xl p-8 bg-gray-50 transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg lg:col-span-3">
+                        <div class="relative overflow-hidden flex justify-center items-start h-auto lg:h-80">
+                            <div class="absolute z-10 inset-0 bg-gradient-to-t from-gray-50 via-transparent"></div>
+                            <img class="w-full h-full object-contain" src="./assets/img/responsivetemplate.avif" alt="Responsive Template" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-xs font-medium bg-purple-100 border border-purple-200 text-purple-600 px-3 py-1 rounded-full">
                   Astroship
                 </span>
-                <h3 class="text-xl lg:text-2xl font-medium mt-2">
-                  Responsive Template
-                </h3>
-                <p class="text-slate-600 mt-2 text-balance">
-                  Astroship is a creative and modern mobile responsive website
-                  template that helps you create any kind of marketing websites
-                  or landing pages.
-                </p>
-              </div>
-            </div>
-            <div
-              class="rounded-2xl p-8 bg-gray-50 transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg lg:col-span-2">
-              <div
-                class="relative overflow-hidden flex justify-center items-start h-auto lg:h-80">
-                <div
-                  class="absolute z-10 inset-0 bg-gradient-to-t from-gray-50 via-transparent"></div>
-                <img
-                  class="w-full h-full object-contain"
-                  src="./assets/img/nextleveltemplate.avif"
-                  alt="Next Level Template"
-                  loading="lazy"
-                  decoding="async" />
-              </div>
-              <div class="mt-2">
-                <span
-                  class="text-xs font-medium bg-indigo-100 border border-indigo-200 text-indigo-600 px-3 py-1 rounded-full">
+                            <h3 class="text-xl lg:text-2xl font-medium mt-2">
+                                Responsive Template
+                            </h3>
+                            <p class="text-slate-600 mt-2 text-balance">
+                                Astroship is a creative and modern mobile responsive website template that helps you create any kind of marketing websites or landing pages.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl p-8 bg-gray-50 transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg lg:col-span-2">
+                        <div class="relative overflow-hidden flex justify-center items-start h-auto lg:h-80">
+                            <div class="absolute z-10 inset-0 bg-gradient-to-t from-gray-50 via-transparent"></div>
+                            <img class="w-full h-full object-contain" src="./assets/img/nextleveltemplate.avif" alt="Next Level Template" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-xs font-medium bg-indigo-100 border border-indigo-200 text-indigo-600 px-3 py-1 rounded-full">
                   Creative
                 </span>
-                <h3 class="text-xl lg:text-2xl font-medium mt-2">
-                  Next Level Template
-                </h3>
-                <p class="text-slate-600 mt-2 text-balance">
-                  Astroship is a new kind of website template that integrates
-                  your favorite tools and workflows.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Grid #2 -->
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
-            <div
-              class="rounded-2xl p-8 bg-gray-50 transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg">
-              <div
-                class="relative overflow-hidden flex justify-center items-start h-auto lg:h-60">
-                <div
-                  class="absolute z-10 inset-0 bg-gradient-to-t from-gray-50 via-transparent"></div>
-                <img
-                  class="w-full h-full object-contain"
-                  src="./assets/img/moderndesign.avif"
-                  alt="Modern Design"
-                  loading="lazy"
-                  decoding="async" />
-              </div>
-              <div class="mt-2">
-                <span
-                  class="text-xs font-medium bg-indigo-100 border border-indigo-200 text-indigo-600 px-3 py-1 rounded-full">
+                            <h3 class="text-xl lg:text-2xl font-medium mt-2">
+                                Next Level Template
+                            </h3>
+                            <p class="text-slate-600 mt-2 text-balance">
+                                Astroship is a new kind of website template that integrates your favorite tools and workflows.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid #2 -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
+                    <div class="rounded-2xl p-8 bg-gray-50 transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg">
+                        <div class="relative overflow-hidden flex justify-center items-start h-auto lg:h-60">
+                            <div class="absolute z-10 inset-0 bg-gradient-to-t from-gray-50 via-transparent"></div>
+                            <img class="w-full h-full object-contain" src="./assets/img/moderndesign.avif" alt="Modern Design" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-xs font-medium bg-indigo-100 border border-indigo-200 text-indigo-600 px-3 py-1 rounded-full">
                   Template
                 </span>
-                <h3 class="text-xl lg:text-2xl font-medium mt-2">
-                  Modern Design
-                </h3>
-                <p class="text-slate-600 mt-2 text-balance">
-                  Feeling old? Try this template and be a part of the modern
-                  design.
-                </p>
-              </div>
-            </div>
-            <div
-              class="rounded-2xl p-8 bg-gray-50 transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg">
-              <div
-                class="relative overflow-hidden flex justify-center items-start h-auto lg:h-60">
-                <div
-                  class="absolute z-10 inset-0 bg-gradient-to-t from-gray-50 via-transparent"></div>
-                <img
-                  class="w-full h-full object-contain"
-                  src="./assets/img/highlightfeatures.avif"
-                  alt="Highlight Features"
-                  loading="lazy"
-                  decoding="async" />
-              </div>
-              <div class="mt-2">
-                <span
-                  class="text-xs font-medium bg-purple-100 border border-purple-200 text-purple-600 px-3 py-1 rounded-full">
+                            <h3 class="text-xl lg:text-2xl font-medium mt-2">
+                                Modern Design
+                            </h3>
+                            <p class="text-slate-600 mt-2 text-balance">
+                                Feeling old? Try this template and be a part of the modern design.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl p-8 bg-gray-50 transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg">
+                        <div class="relative overflow-hidden flex justify-center items-start h-auto lg:h-60">
+                            <div class="absolute z-10 inset-0 bg-gradient-to-t from-gray-50 via-transparent"></div>
+                            <img class="w-full h-full object-contain" src="./assets/img/highlightfeatures.avif" alt="Highlight Features" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-xs font-medium bg-purple-100 border border-purple-200 text-purple-600 px-3 py-1 rounded-full">
                   Product
                 </span>
-                <h3 class="text-xl lg:text-2xl font-medium mt-2">
-                  Highlight Features
-                </h3>
-                <p class="text-slate-600 mt-2 text-balance">
-                  You can highlight your features in a trendy grid like this
-                  one.
-                </p>
-              </div>
-            </div>
-            <div
-              class="rounded-2xl p-8 bg-gray-50 transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg">
-              <div
-                class="relative overflow-hidden flex justify-center items-start h-auto lg:h-60">
-                <div
-                  class="absolute z-10 inset-0 bg-gradient-to-t from-gray-50 via-transparent"></div>
-                <img
-                  class="w-full h-full object-contain"
-                  src="./assets/img/100+integrations.svg"
-                  alt="100+ Integrations"
-                  loading="lazy"
-                  decoding="async" />
-              </div>
-              <div class="mt-2">
-                <span
-                  class="text-xs font-medium bg-gray-100 border border-gray-200 text-gray-800 px-3 py-1 rounded-full">
+                            <h3 class="text-xl lg:text-2xl font-medium mt-2">
+                                Highlight Features
+                            </h3>
+                            <p class="text-slate-600 mt-2 text-balance">
+                                You can highlight your features in a trendy grid like this one.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl p-8 bg-gray-50 transition-all ring-1 ring-gray-200/50 shadow hover:shadow-lg">
+                        <div class="relative overflow-hidden flex justify-center items-start h-auto lg:h-60">
+                            <div class="absolute z-10 inset-0 bg-gradient-to-t from-gray-50 via-transparent"></div>
+                            <img class="w-full h-full object-contain" src="./assets/img/100+integrations.svg" alt="100+ Integrations" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-xs font-medium bg-gray-100 border border-gray-200 text-gray-800 px-3 py-1 rounded-full">
                   Webhooks
                 </span>
-                <h3 class="text-xl lg:text-2xl font-medium mt-2">
-                  100+ Integrations
-                </h3>
-                <p class="text-slate-600 mt-2 text-balance">
-                  Astroship is a new kind of website template that integrates
-                  your favorite tools and workflows.
-                </p>
-              </div>
+                            <h3 class="text-xl lg:text-2xl font-medium mt-2">
+                                100+ Integrations
+                            </h3>
+                            <p class="text-slate-600 mt-2 text-balance">
+                                Astroship is a new kind of website template that integrates your favorite tools and workflows.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Features #2 -->
-      <section class="features2">
-        <div class="max-w-screen-xl mx-auto px-5">
-          <div
-            class="max-w-4xl mx-auto flex flex-col justify-center items-center mt-24">
-            <span
-              class="text-xs font-medium bg-purple-100 border border-purple-200 text-purple-600 px-3 py-1 rounded-full">
+        <!-- Features #2 -->
+        <section class="features2">
+            <div class="max-w-screen-xl mx-auto px-5">
+                <div class="max-w-4xl mx-auto flex flex-col justify-center items-center mt-24">
+                    <span class="text-xs font-medium bg-purple-100 border border-purple-200 text-purple-600 px-3 py-1 rounded-full">
               MORE FEATURES
             </span>
-            <h2
-              class="text-center text-4xl lg:text-5xl font-bold lg:tracking-tight mt-4">
-              We've got you covered
-            </h2>
-            <p class="text-center text-lg text-slate-600 text-pretty mt-4">
-              Our template covers all things SAAS. If you don't find what you're
-              looking for, contact us and we'll either help you or steer you in
-              the right direction.
-            </p>
-          </div>
-          <!-- Grid -->
-          <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-16 mt-16">
-            <div
-              class="flex flex-col gap-4 items-start hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg md:-m-5 p-5 transition-all">
-              <div
-                class="bg-indigo-50 border shadow shadow-indigo-100/50 border-indigo-100 transition-colors grid shrink-0 place-items-center p-2 w-10 h-10 rounded-lg mt-1">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="text-indigo-500"
-                  data-icon="fluent:document-javascript-24-regular">
+                    <h2 class="text-center text-4xl lg:text-5xl font-bold lg:tracking-tight mt-4">
+                        We've got you covered
+                    </h2>
+                    <p class="text-center text-lg text-slate-600 text-pretty mt-4">
+                        Our template covers all things SAAS. If you don't find what you're looking for, contact us and we'll either help you or steer you in the right direction.
+                    </p>
+                </div>
+                <!-- Grid -->
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-16 mt-16">
+                    <div class="flex flex-col gap-4 items-start hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg md:-m-5 p-5 transition-all">
+                        <div class="bg-indigo-50 border shadow shadow-indigo-100/50 border-indigo-100 transition-colors grid shrink-0 place-items-center p-2 w-10 h-10 rounded-lg mt-1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" class="text-indigo-500" data-icon="fluent:document-javascript-24-regular">
                   <symbol id="ai:fluent:document-javascript-24-regular">
                     <path
                       fill="currentColor"
@@ -1094,25 +761,17 @@
                   <use
                     xlink:href="#ai:fluent:document-javascript-24-regular"></use>
                 </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold">Bring Your Own Framework</h3>
-                <p class="text-slate-500 leading-relaxed mt-2">
-                  Build your site using React, Svelte, Vue, Preact, web
-                  components, or just plain ol' HTML + JavaScript.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-col gap-4 items-start hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg md:-m-5 p-5 transition-all">
-              <div
-                class="bg-indigo-50 border shadow shadow-indigo-100/50 border-indigo-100 transition-colors grid shrink-0 place-items-center p-2 w-10 h-10 rounded-lg mt-1">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="text-indigo-500"
-                  data-icon="fluent:trophy-24-regular">
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">Bring Your Own Framework</h3>
+                            <p class="text-slate-500 leading-relaxed mt-2">
+                                Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 items-start hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg md:-m-5 p-5 transition-all">
+                        <div class="bg-indigo-50 border shadow shadow-indigo-100/50 border-indigo-100 transition-colors grid shrink-0 place-items-center p-2 w-10 h-10 rounded-lg mt-1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" class="text-indigo-500" data-icon="fluent:trophy-24-regular">
                   <symbol id="ai:fluent:trophy-24-regular">
                     <path
                       fill="currentColor"
@@ -1120,25 +779,17 @@
                   </symbol>
                   <use xlink:href="#ai:fluent:trophy-24-regular"></use>
                 </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold">100% Static HTML, No JS</h3>
-                <p class="text-slate-500 leading-relaxed mt-2">
-                  Astro renders your entire page to static HTML, removing all
-                  JavaScript from your final build by default.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-col gap-4 items-start hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg md:-m-5 p-5 transition-all">
-              <div
-                class="bg-indigo-50 border shadow shadow-indigo-100/50 border-indigo-100 transition-colors grid shrink-0 place-items-center p-2 w-10 h-10 rounded-lg mt-1">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="text-indigo-500"
-                  data-icon="fluent:box-24-regular">
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">100% Static HTML, No JS</h3>
+                            <p class="text-slate-500 leading-relaxed mt-2">
+                                Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 items-start hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg md:-m-5 p-5 transition-all">
+                        <div class="bg-indigo-50 border shadow shadow-indigo-100/50 border-indigo-100 transition-colors grid shrink-0 place-items-center p-2 w-10 h-10 rounded-lg mt-1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" class="text-indigo-500" data-icon="fluent:box-24-regular">
                   <symbol id="ai:fluent:box-24-regular">
                     <path
                       fill="currentColor"
@@ -1146,25 +797,17 @@
                   </symbol>
                   <use xlink:href="#ai:fluent:box-24-regular"></use>
                 </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold">On-Demand Components</h3>
-                <p class="text-slate-500 leading-relaxed mt-2">
-                  Need some JS? Astro can automatically hydrate interactive
-                  components when they become visible on the page.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-col gap-4 items-start hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg md:-m-5 p-5 transition-all">
-              <div
-                class="bg-indigo-50 border shadow shadow-indigo-100/50 border-indigo-100 transition-colors grid shrink-0 place-items-center p-2 w-10 h-10 rounded-lg mt-1">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="text-indigo-500"
-                  data-icon="fluent:box-multiple-24-regular">
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">On-Demand Components</h3>
+                            <p class="text-slate-500 leading-relaxed mt-2">
+                                Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 items-start hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg md:-m-5 p-5 transition-all">
+                        <div class="bg-indigo-50 border shadow shadow-indigo-100/50 border-indigo-100 transition-colors grid shrink-0 place-items-center p-2 w-10 h-10 rounded-lg mt-1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" class="text-indigo-500" data-icon="fluent:box-multiple-24-regular">
                   <symbol id="ai:fluent:box-multiple-24-regular">
                     <path
                       fill="currentColor"
@@ -1172,25 +815,17 @@
                   </symbol>
                   <use xlink:href="#ai:fluent:box-multiple-24-regular"></use>
                 </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold">Broad Integration</h3>
-                <p class="text-slate-500 leading-relaxed mt-2">
-                  Astro supports TypeScript, Scoped CSS, CSS Modules, Sass,
-                  Tailwind, Markdown, MDX, and any other npm packages.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-col gap-4 items-start hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg md:-m-5 p-5 transition-all">
-              <div
-                class="bg-indigo-50 border shadow shadow-indigo-100/50 border-indigo-100 transition-colors grid shrink-0 place-items-center p-2 w-10 h-10 rounded-lg mt-1">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="text-indigo-500"
-                  data-icon="fluent:book-search-24-regular">
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">Broad Integration</h3>
+                            <p class="text-slate-500 leading-relaxed mt-2">
+                                Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 items-start hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg md:-m-5 p-5 transition-all">
+                        <div class="bg-indigo-50 border shadow shadow-indigo-100/50 border-indigo-100 transition-colors grid shrink-0 place-items-center p-2 w-10 h-10 rounded-lg mt-1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" class="text-indigo-500" data-icon="fluent:book-search-24-regular">
                   <symbol id="ai:fluent:book-search-24-regular">
                     <path
                       fill="currentColor"
@@ -1198,25 +833,17 @@
                   </symbol>
                   <use xlink:href="#ai:fluent:book-search-24-regular"></use>
                 </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold">SEO Enabled</h3>
-                <p class="text-slate-500 leading-relaxed mt-2">
-                  Automatic sitemaps, RSS feeds, pagination and collections take
-                  the pain out of SEO and syndication. It just works!
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-col gap-4 items-start hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg md:-m-5 p-5 transition-all">
-              <div
-                class="bg-indigo-50 border shadow shadow-indigo-100/50 border-indigo-100 transition-colors grid shrink-0 place-items-center p-2 w-10 h-10 rounded-lg mt-1">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="text-indigo-500"
-                  data-icon="fluent:people-community-24-regular">
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">SEO Enabled</h3>
+                            <p class="text-slate-500 leading-relaxed mt-2">
+                                Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 items-start hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg md:-m-5 p-5 transition-all">
+                        <div class="bg-indigo-50 border shadow shadow-indigo-100/50 border-indigo-100 transition-colors grid shrink-0 place-items-center p-2 w-10 h-10 rounded-lg mt-1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" class="text-indigo-500" data-icon="fluent:people-community-24-regular">
                   <symbol id="ai:fluent:people-community-24-regular">
                     <path
                       fill="currentColor"
@@ -1225,69 +852,54 @@
                   <use
                     xlink:href="#ai:fluent:people-community-24-regular"></use>
                 </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold">Community</h3>
-                <p class="text-slate-500 leading-relaxed mt-2">
-                  Astro is an open source project powered by hundreds of
-                  contributors making thousands of individual contributions.
-                </p>
-              </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">Community</h3>
+                            <p class="text-slate-500 leading-relaxed mt-2">
+                                Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- CTA -->
-      <section class="cta">
-        <div
-          class="flex flex-col items-center text-center bg-gradient-to-bl from-indigo-900 to-indigo-700 p-8 md:px-20 md:py-20 mt-20">
-          <h2 class="text-white text-4xl md:text-6xl tracking-tight">
-            Build faster websites.
-          </h2>
-          <p class="text-white/70 text-lg md:text-xl mt-4">
-            Pull content from anywhere and serve it fast with Astro's next-gen
-            island architecture.
-          </p>
-          <div class="flex mt-4">
-            <a
-              class="text-center transition px-7 py-2.5 bg-white text-indigo-800 border-2 border-transparent rounded-full"
-              href="#">
+        <!-- CTA -->
+        <section class="cta">
+            <div class="flex flex-col items-center text-center bg-gradient-to-bl from-indigo-900 to-indigo-700 p-8 md:px-20 md:py-20 mt-20">
+                <h2 class="text-white text-4xl md:text-6xl tracking-tight">
+                    Build faster websites.
+                </h2>
+                <p class="text-white/70 text-lg md:text-xl mt-4">
+                    Pull content from anywhere and serve it fast with Astro's next-gen island architecture.
+                </p>
+                <div class="flex mt-4">
+                    <a class="text-center transition px-7 py-2.5 bg-white text-indigo-800 border-2 border-transparent rounded-full" href="#">
               Sign up for a 14-day Trial
             </a>
-          </div>
-        </div>
-      </section>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-slate-100 border-t border-slate-100 py-14">
-      <div class="max-w-screen-xl mx-auto px-5">
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-          <div class="sm:col-span-2 md:col-span-3 lg:col-span-2">
-            <a href="./" class="flex items-center text-lg">
-              <span class="text-indigo-600 font-bold">Astro</span>
-              <span class="text-slate-600">ship</span>
-              <span
-                class="text-[10px] font-bold leading-none bg-gray-200 text-slate-700 px-2 py-1 rounded-md mt-0.5 ml-1">
+        <div class="max-w-screen-xl mx-auto px-5">
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <div class="sm:col-span-2 md:col-span-3 lg:col-span-2">
+                    <a href="./" class="flex items-center text-lg">
+                        <span class="text-indigo-600 font-bold">Astro</span>
+                        <span class="text-slate-600">ship</span>
+                        <span class="text-[10px] font-bold leading-none bg-gray-200 text-slate-700 px-2 py-1 rounded-md mt-0.5 ml-1">
                 PRO
               </span>
-            </a>
-            <p class="text-sm text-slate-700 max-w-xs mt-4">
-              Astroship Pro is a premium astro website template made for saas &
-              startups. Built with Astro and Tailwind CSS.
-            </p>
-            <div class="flex items-center gap-3 mt-4">
-              <a
-                href="https://twitter.com/surjithctly"
-                target="_blank"
-                class="bg-slate-200 hover:bg-slate-300 rounded w-6 h-6 inline-flex justify-center items-center text-slate-500">
-                <svg
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                  class="w-4 h-4"
-                  data-icon="bx:bxl-twitter">
+                    </a>
+                    <p class="text-sm text-slate-700 max-w-xs mt-4">
+                        Astroship Pro is a premium astro website template made for saas & startups. Built with Astro and Tailwind CSS.
+                    </p>
+                    <div class="flex items-center gap-3 mt-4">
+                        <a href="https://twitter.com/surjithctly" target="_blank" class="bg-slate-200 hover:bg-slate-300 rounded w-6 h-6 inline-flex justify-center items-center text-slate-500">
+                            <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-4 h-4" data-icon="bx:bxl-twitter">
                   <symbol id="ai:bx:bxl-twitter">
                     <path
                       d="M19.633 7.997c.013.175.013.349.013.523c0 5.325-4.053 11.461-11.46 11.461c-2.282 0-4.402-.661-6.186-1.809c.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721a4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062c.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973a4.02 4.02 0 0 1-1.771 2.22a8.073 8.073 0 0 0 2.319-.624a8.645 8.645 0 0 1-2.019 2.083z"
@@ -1295,17 +907,9 @@
                   </symbol>
                   <use xlink:href="#ai:bx:bxl-twitter"></use>
                 </svg>
-              </a>
-              <a
-                href="https://facebook.com/"
-                target="_blank"
-                class="bg-slate-200 hover:bg-slate-300 rounded w-6 h-6 inline-flex justify-center items-center text-slate-500">
-                <svg
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                  class="w-4 h-4"
-                  data-icon="bx:bxl-facebook-circle">
+                        </a>
+                        <a href="https://facebook.com/" target="_blank" class="bg-slate-200 hover:bg-slate-300 rounded w-6 h-6 inline-flex justify-center items-center text-slate-500">
+                            <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-4 h-4" data-icon="bx:bxl-facebook-circle">
                   <symbol id="ai:bx:bxl-facebook-circle">
                     <path
                       d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999c0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891c1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
@@ -1313,17 +917,9 @@
                   </symbol>
                   <use xlink:href="#ai:bx:bxl-facebook-circle"></use>
                 </svg>
-              </a>
-              <a
-                href="https://linkedin.com/"
-                target="_blank"
-                class="bg-slate-200 hover:bg-slate-300 rounded w-6 h-6 inline-flex justify-center items-center text-slate-500">
-                <svg
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                  class="w-4 h-4"
-                  data-icon="bx:bxl-linkedin-square">
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" class="bg-slate-200 hover:bg-slate-300 rounded w-6 h-6 inline-flex justify-center items-center text-slate-500">
+                            <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-4 h-4" data-icon="bx:bxl-linkedin-square">
                   <symbol id="ai:bx:bxl-linkedin-square">
                     <path
                       d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096a1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277c-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387c2.704 0 3.203 1.778 3.203 4.092v4.71z"
@@ -1331,96 +927,71 @@
                   </symbol>
                   <use xlink:href="#ai:bx:bxl-linkedin-square"></use>
                 </svg>
-              </a>
-            </div>
-          </div>
-          <div>
-            <h3 class="text-sm font-medium text-slate-800">Company</h3>
-            <div class="flex flex-col mt-3">
-              <a
-                href="./about"
-                class="text-sm text-slate-600 hover:text-indigo-600 py-2">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium text-slate-800">Company</h3>
+                    <div class="flex flex-col mt-3">
+                        <a href="./about" class="text-sm text-slate-600 hover:text-indigo-600 py-2">
                 About
               </a>
-              <a
-                href="#"
-                class="text-sm text-slate-600 hover:text-indigo-600 py-2">
+                        <a href="#" class="text-sm text-slate-600 hover:text-indigo-600 py-2">
                 Careers
               </a>
-              <a
-                href="./blog"
-                class="text-sm text-slate-600 hover:text-indigo-600 py-2">
+                        <a href="./blog" class="text-sm text-slate-600 hover:text-indigo-600 py-2">
                 Blog
               </a>
-              <a
-                href="./contact"
-                class="text-sm text-slate-600 hover:text-indigo-600 py-2">
+                        <a href="./contact" class="text-sm text-slate-600 hover:text-indigo-600 py-2">
                 Contact
               </a>
-            </div>
-          </div>
-          <div>
-            <h3 class="text-sm font-medium text-slate-800">Product</h3>
-            <div class="flex flex-col mt-3">
-              <a
-                href="#"
-                class="text-sm text-slate-600 hover:text-indigo-600 py-2">
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium text-slate-800">Product</h3>
+                    <div class="flex flex-col mt-3">
+                        <a href="#" class="text-sm text-slate-600 hover:text-indigo-600 py-2">
                 For Startups
               </a>
-              <a
-                href="#"
-                class="text-sm text-slate-600 hover:text-indigo-600 py-2">
+                        <a href="#" class="text-sm text-slate-600 hover:text-indigo-600 py-2">
                 Features
               </a>
-              <a
-                href="#"
-                class="text-sm text-slate-600 hover:text-indigo-600 py-2">
+                        <a href="#" class="text-sm text-slate-600 hover:text-indigo-600 py-2">
                 Pricing
               </a>
-              <a
-                href="#"
-                class="text-sm text-slate-600 hover:text-indigo-600 py-2">
+                        <a href="#" class="text-sm text-slate-600 hover:text-indigo-600 py-2">
                 Integrations
               </a>
-            </div>
-          </div>
-          <div>
-            <h3 class="text-sm font-medium text-slate-800">Resources</h3>
-            <div class="flex flex-col mt-3">
-              <a
-                href="#"
-                class="text-sm text-slate-600 hover:text-indigo-600 py-2">
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium text-slate-800">Resources</h3>
+                    <div class="flex flex-col mt-3">
+                        <a href="#" class="text-sm text-slate-600 hover:text-indigo-600 py-2">
                 Help Center
               </a>
-              <a
-                href="#"
-                class="text-sm text-slate-600 hover:text-indigo-600 py-2">
+                        <a href="#" class="text-sm text-slate-600 hover:text-indigo-600 py-2">
                 Guides
               </a>
-              <a
-                href="#"
-                class="text-sm text-slate-600 hover:text-indigo-600 py-2">
+                        <a href="#" class="text-sm text-slate-600 hover:text-indigo-600 py-2">
                 Documentation
               </a>
-              <a
-                href="#"
-                class="text-sm text-slate-600 hover:text-indigo-600 py-2">
+                        <a href="#" class="text-sm text-slate-600 hover:text-indigo-600 py-2">
                 Uptime Status
               </a>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="border-t border-slate-200 mt-14 pt-8 px-5">
+                <p class="text-sm text-center text-slate-600 text-balance">
+                    Copyright © 2024 Astroship. All rights reserved.
+                </p>
+                <p class="text-center text-xs text-slate-600 mt-2">
+                    <a href="#" class="hover:text-indigo-500">Terms</a> ・
+                    <a href="#" class="hover:text-indigo-500">Privacy</a>
+                </p>
+            </div>
         </div>
-        <div class="border-t border-slate-200 mt-14 pt-8 px-5">
-          <p class="text-sm text-center text-slate-600 text-balance">
-            Copyright © 2024 Astroship. All rights reserved.
-          </p>
-          <p class="text-center text-xs text-slate-600 mt-2">
-            <a href="#" class="hover:text-indigo-500">Terms</a>
-            ・
-            <a href="#" class="hover:text-indigo-500">Privacy</a>
-          </p>
-        </div>
-      </div>
     </footer>
 
     <!-- Flowbite JS -->
@@ -1428,5 +999,6 @@
 
     <!-- Main JS -->
     <script src="../src/assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>
