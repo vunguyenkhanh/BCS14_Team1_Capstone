@@ -20,5 +20,5 @@ This is the Tailwind CSS Capstone project.
 
 ### Demo URL:
 - **Layout URL**: [Link](https://astroship-pro.web3templates.com/)
-- **My Deploy URL**: [Link](#) (Updating)
+- **My Deploy URL**: [Link](https://bcs14-team1-capstone.vercel.app/)
 - **Youtube URL**: [Link](#) (Updating)
